@@ -74,6 +74,7 @@ const App = () => {
               <div className="popup">
                 <h3>{entry.title}</h3>
                 <p>{entry.comments}</p>
+          <small>Visited on: {new Date(entry.visitDate).toLocaleDateString()}</small>
               </div>
             </Popup>
           ) : null}
